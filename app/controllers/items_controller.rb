@@ -1,6 +1,5 @@
 class ItemsController < ApplicationController
   def index
-    @items    = Item.all
-    @backpack = Backpack.new
+    @items = Item.all
   end
 end
