@@ -14,6 +14,13 @@
         <a class="navbar-brand" href="#">BackPacking</a>
       </div><!-- /.container-fluid -->
     </nav>
+
+    <% flash.each do |type, message| %>
+      <%= content_tag :div, message, class: type %>
+    <% end %>
+
+    <p>Backpack: <%= @backpack.total_count %></p>
+
     <%= yield %>
   </body>
 </html>
