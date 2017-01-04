@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.feature "User adds a pen to their backpack", type: :feature do
-  before(:all) do
+  before(:each) do
     Item.create!(
       name: "Rollerball Pen",
       image_url: "/images/rollerball_pen.jpeg"
