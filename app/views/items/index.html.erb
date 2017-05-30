@@ -3,6 +3,7 @@
     <div class="col-md-3 text-center item-container">
       <%= image_tag(item.image_url, class: 'item-image') %>
       <h3><%= item.name %></h3>
+      <%= button_to "Add Item", backpacks_path(item_id: item.id), class: "btn btn-danger" %>
     </div>
   <% end %>
 </div>
